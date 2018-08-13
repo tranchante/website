@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"
+          type="image/png"
+          href="/static/logo.png">
+    <title>Tranchante Capital</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <style type="text/css">
+    .bg-cover {
+        background-image: url('/static/header.png');
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav  class="navbar navbar-expand-md navbar-green fixed-top bg-dark">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+          <a class="navbar-brand" href="#">
+                <img src="/static/logo.png" alt="Logo" style="width:40px;">
+              </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div style="background-color:#3CB371" class="jumbotron jumbotron bg-cover">
+        <div class="container">
+          <h1 class="display-3">Tranchante Capital</h1>
+          <p>We are a global investment management firm dedicated to delivering results for our clients.</p>
+          <!--p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p-->
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>About us</h2>
+            <p>At the nexus of economics, behavioral finance, data and technology, Tranchante Capital’s strives to do a continuous exploration of what drives markets and how it can be applied to client portfolios. </p>
+            <p><a href="https://twitter.com/TranchanteC?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TranchanteC</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+            <!--a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p-->
+          </div>
+          <div class="col-md-4">
+            <h2>Blog</h2>
+<blockquote class="embedly-card"><h4><a href="https://medium.com/tranchante-investment-research">Tranchante Investment Research - Medium</a></h4><p>Research by Tranchante Capital.</p></blockquote>
+            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+          </div>
+          <div class="col-md-4">
+            <h2>Contact us</h2>
+            <p>{% for comment in comments %}
+                <div class="row">
+                    {{ comment.content }}
+                </div>
+            {% endfor %}
+            </p>
+
+                <form action="." method="POST">
+                    <textarea class="form-control" name="contents" placeholder="Enter a comment" style="min-width: 100%"></textarea>
+                    <input type="submit" class="btn btn-success" value="Post comment", align="bottom">
+                </form>
+
+
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Tranchant Capital 2018-2019</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+<!--html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="icon"
+          type="image/png"
+          href="/static/logo.png">
+        <title>Tranchante Capital</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img src="/static/logo.png" alt="Logo" style="width:40px;">
+              </a
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Tranchante Capital</a>
+
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+            <p>&nbsp;</p>
+            <h2 "post-title">Tranchante Capital</h2>
+            <h5 class="post-subtitle" >Tranchante Capital is a global investment management firm dedicated to delivering results for our clients.</h5>
+            <p class="font-italic">
+                At the nexus of economics, behavioral finance, data and technology, Tranchante Capital’s strives to do a continuous exploration of what drives markets and how it can be applied to client portfolios. Our culture of intellectual curiosity compels us to challenge the status quo, disrupt long-held beliefs and uncover new insights.
+            </p>
+        </div>
+            <p>&nbsp;</p>
+        <div class="container">
+            <h3>Blog</h3>
+            <blockquote class="embedly-card"><h4><a href="https://medium.com/tranchante-investment-research">Tranchante Investment Research - Medium</a></h4><p>Research by Tranchante Capital.</p></blockquote>
+            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </div>
+        <div class="container" span="100%">
+
+            {% for comment in comments %}
+                <div class="row">
+                    {{ comment.content }}
+                </div>
+            {% endfor %}
+
+            <div class="row">
+                <form action="." method="POST">
+                    <textarea class="form-control" name="contents" placeholder="Enter a comment"></textarea>
+                    <input type="submit" class="btn btn-success" value="Post comment">
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+</html-->
